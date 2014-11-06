@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/webtitlefragment"
+        android:name="chushi.bawang.fragment.FragmentWebview"
+        android:layout_width="match_parent"
+        android:layout_height="30sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3sp" >
+
+        <ProgressBar
+            android:id="@+id/progressWeb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/download_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/downloadProgress_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="false"
+            android:layout_toLeftOf="@id/download_progressbar"
+            android:gravity="center_vertical|fill_vertical"
+            android:text="percentage"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35sp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <!-- button-back -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/downhome_arrow_left" />
+        <!-- button-refresh -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/refresh" />
+        <!-- button-menu -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/menu" />
+        <!-- button-multiwins -->
+
+
+        <!-- button-home -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

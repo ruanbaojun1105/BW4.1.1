@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/theambg" >
+
+        <EditText
+            android:id="@+id/home_url_input"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/home_visit_button"
+            android:background="@drawable/buttonbg_alap"
+            android:ems="10"
+            android:hint="@string/url_input" 
+            android:textSize="13dp"           
+			android:textColorHint="#FFFFFF"
+            android:lines="1"
+            android:singleLine="true" />
+
+        
+        <Button
+            android:id="@+id/home_visit_button"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonbg_alap"
+            android:text="@string/visit_website"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+    
+
+    </RelativeLayout>
+
+</LinearLayout>

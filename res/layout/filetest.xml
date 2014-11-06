@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/filebg" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rela1"
+        android:layout_below="@+id/webtitlefragment"
+        android:listSelector="@color/littlegreen"
+        android:padding="10sp" >
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5sp" >
+
+        <Button
+            android:id="@+id/outSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbg_alap"
+            android:text="外置SD" />
+
+        <Button
+            android:id="@+id/inSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/topFile"
+            android:layout_alignBottom="@+id/topFile"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonbg_alap"
+            android:text="内置SD" />
+
+        <Button
+            android:id="@+id/topFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/outSD"
+            android:layout_alignBottom="@+id/outSD"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonbg_alap"
+            android:text="首页" />
+
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/webtitlefragment"
+        android:name="chushi.bawang.fragment.FragmentPopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

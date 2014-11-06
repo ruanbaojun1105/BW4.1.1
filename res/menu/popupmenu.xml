@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item
+        android:id="@+id/lightss"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="背景：微亮"/>
+
+    <item
+        android:id="@+id/greyss"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="背景：微暗"/>
+
+
+</menu>

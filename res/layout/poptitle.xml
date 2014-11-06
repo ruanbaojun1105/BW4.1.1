@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="30sp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignRight="@+id/listView"
+      android:background="@drawable/theambg" >
+
+        <ImageButton
+            android:id="@+id/backmainactivity"
+            android:layout_width="60sp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/buttonbg_alap"
+            android:src="@android:drawable/ic_menu_revert"            
+            />
+
+        <ImageButton
+            android:id="@+id/popuplist"
+            android:layout_width="60sp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/buttonbg_alap"
+            android:src="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="文件管理"
+            android:textSize="18sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  </RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/hometitlefragment"
+        android:name="chushi.bawang.fragment.FragmentHomes"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp" />
+
+    <fragment
+        android:id="@+id/homedownfragment2"
+        android:name="chushi.bawang.fragment.FragmentHomeDown"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <GridView
+        android:id="@+id/index_girdview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homedownfragment2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hometitlefragment"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:horizontalSpacing="20dip"
+        android:numColumns="4"
+        android:verticalSpacing="15dip" >
+
+    </GridView>
+
+</RelativeLayout>
